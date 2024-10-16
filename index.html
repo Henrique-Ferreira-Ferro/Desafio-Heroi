@@ -8,7 +8,32 @@
 </head>
 <body>
     <main>
-        <p>Helloooo</p>
+        <h1>Criar Herói e Realizar Ataque</h1>
+
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome">
+        </div>
+    
+        <div>
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade">
+        </div>
+    
+        <div>
+            <label for="tipo">Tipo:</label>
+            <select id="tipo">
+                <option value="Guerreiro">Guerreiro</option>
+                <option value="mago">Mago</option>
+                <option value="Monge">Monge</option>
+                <option value="Ninja">Ninja</option>
+            </select>
+        </div>
+    
+        <button onclick="criarHeroi()">Criar Herói e Atacar</button>
+    
+        <h2>Resultado do Ataque</h2>
+        <p id="resultado"></p>
     </main>
     <script src="script.js"></script>
 </body>
